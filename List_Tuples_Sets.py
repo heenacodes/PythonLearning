@@ -47,3 +47,13 @@ print(courses_str)
 
 courses = courses_str.split(' * ')
 print(courses)
+
+#immutable - Tuples
+tuple1 = ('Heena', 'Shadab', 'Shadu')
+tuple2 = tuple1
+print(tuple1)
+print(tuple2)
+tuple1[0] = 'Honey' #tuple object does not support item assignment
+
+
+#Sets
