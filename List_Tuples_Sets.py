@@ -53,7 +53,21 @@ tuple1 = ('Heena', 'Shadab', 'Shadu')
 tuple2 = tuple1
 print(tuple1)
 print(tuple2)
-tuple1[0] = 'Honey' #tuple object does not support item assignment
+#tuple1[0] = 'Honey' #tuple object does not support item assignment
 
 
 #Sets
+sample_set = {'practice', 'consistency', 'confidence'} #sets don't care about the order of elements
+print(sample_set)
+
+sample_set.add('consistency')
+print(sample_set)
+
+tech_set = {'aws', 'snowflake', 'dbt', 'practice', 'consistency'}
+print('aws' in tech_set)
+
+print(sample_set.intersection(tech_set))
+print(tech_set.difference(sample_set))
+
+final_set = tech_set.union(sample_set)
+print(final_set)
